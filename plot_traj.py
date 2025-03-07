@@ -42,15 +42,19 @@ x, y, th = [0], [0], [0]
 x_hat, y_hat, th_hat = [0], [0], [0]
 dt = 0.05  # seconds
 for i in range(len(targ_vels)):
+    lv = targ_vels[i][0]
+    av = targ_vels[i][1]
+    lv_hat = real_vels[i][0]
+    av_hat = real_vels[i][1]
     ### START CODING HERE ### ~ 6 lines
     # Compute ideal trajectory
-    dx = None
-    dy = None
-    dth = None
+    dx = lv * (cos(th[i])) * dt   
+    dy = lv * (sin(th[i])) * dt   
+    dth = av * dt
     # Compute actual trajectory
-    dx_hat = None
-    dy_hat = None
-    dth_hat = None
+    dx_hat = lv_hat * (cos(th_hat[i])) * dt
+    dy_hat = lv_hat * (sin(th_hat[i])) * dt
+    dth_hat = av_hat * dt
     ### END CODING HERE ###
     # Store ideal state
     x.append(x[-1] + dx)
