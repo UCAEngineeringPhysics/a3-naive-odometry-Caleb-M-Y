@@ -36,11 +36,11 @@ Then reveal the uploaded trajectory images below.
 
 #### Noload Test Trajectory
 
-![noload_traj](home/Caleb1/Pictures/noload_traj.png)
+![noload_traj](images/noload_traj.png)
 
 #### Ground Test Trajectory
 
-![ground_traj](home/Caleb1/Pictures/ground_traj.png)
+![ground_traj](images/ground_traj.png)
 
 ## Study Resrouces
 
